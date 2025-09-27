@@ -1,0 +1,57 @@
+#criar a lista com coisas que gosto
+>>> lista = ['chocolate', 'jogos', 'musica', 'arte', 'filmes']
+
+#imprimir a lista
+>>> print(lista)
+['chocolate', 'jogos', 'musica', 'arte', 'filmes']
+
+#imprimir o elemento do meio 
+>>> print(lista[2])
+musica
+
+#subistituindo o elemento do meio
+>>> lista[2] = 'sabia'
+
+#imprimindo a nova lista
+>>> print(lista)
+['chocolate', 'jogos', 'sabia', 'arte', 'filmes']
+
+#adicionando um novo elemento no final
+>>> lista.append('bolo')
+>>> print(lista)
+['chocolate', 'jogos', 'sabia', 'arte', 'filmes', 'bolo']
+
+#adicionando um novo elemento no começo
+>>> lista.insert(0, 'musica')
+>>> print(lista)
+['musica', 'chocolate', 'jogos', 'sabia', 'arte', 'filmes', 'bolo']
+
+#adicionando um novo elemento em outra posicao 
+>>> lista.insert(3, 'disney')
+>>> print(lista)
+['musica', 'chocolate', 'jogos', 'disney', 'sabia', 'arte', 'filmes', 'bolo']
+
+#removendo o ultimo elemento
+>>> lista.pop()
+'bolo'
+>>> print(lista)
+['musica', 'chocolate', 'jogos', 'disney', 'sabia', 'arte', 'filmes']
+
+#removendo o primeiro elemento
+>>> lista.pop(0)
+'musica'
+>>> print(lista)
+['chocolate', 'jogos', 'disney', 'sabia', 'arte', 'filmes']
+
+#removendo o elemento em outra posicao
+>>> lista.pop(4)
+'arte'
+>>> print(lista)
+['chocolate', 'jogos', 'disney', 'sabia', 'filmes']
+
+#criando uma string a partir da lista com join
+#join e um metodo do tipo string que requer um iteravel como argumento para formar uma string
+#str.join(iterable)
+>>> string =','.join(lista)
+>>> print(string)
+chocolate,jogos,disney,sabia,filmes
