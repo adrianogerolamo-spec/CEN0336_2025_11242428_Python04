@@ -1,0 +1,12 @@
+>>> my_list = ['a', 'bb', 'ccc']
+#x = y cria uma "referência mutavel"
+>>> list_copy = my_list
+>>> print(my_list)
+#lista sem modificacoes
+['a', 'bb', 'ccc']
+#novo elemento adicionado na copia
+>>> list_copy.append('dddd')
+>>> print(my_list)
+#valor adicionado na lista original, pois a variavel list_copy
+#é uma referencia mutavel a variavel original, my_list
+['a', 'bb', 'ccc', 'dddd']
