@@ -1,0 +1,12 @@
+>>> my_list2 = ['a', 'bb', 'ccc']
+#utilizado o metodo .copy()
+>>> list_copy2 = my_list2.copy()
+>>> print(my_list2)
+['a', 'bb', 'ccc']
+#nova string adicionada apenas a copia
+>>> list_copy2.append('dddd')
+#lista orginal nao se modifica
+>>> print(my_list2)
+['a', 'bb', 'ccc']
+>>> print(list_copy2)
+['a', 'bb', 'ccc', 'dddd']
